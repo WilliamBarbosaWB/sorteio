@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.principal img {
+    width: 583px;
+}
+
+.principal p {
+    padding-top: 80px;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.caixas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input {
+    display: flex;
+    width: 342px;
+    padding: 40px 233px 30px 16px;
+    align-items: center;
+    margin: 20px; 
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+.number-input {
+    width: 100%;
+    padding: 15px; /* Espaçamento interno */
+    font-size: 32px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    text-align: center; /* Centraliza o texto no input */
+}
+
+button {
+    display: flex;
+    width: 342px;
+    height: 72px;
+    padding: 0px 76px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #AEC346;
+    box-shadow: 0px 18px 40px 0px rgba(174, 195, 70, 0.35);
+    margin-top: 60px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700px;
+}
+
+@media (max-width: 600px) {
+    .principal {
+        padding: 10px;
+        max-height: unset; /* Remove limite de altura */
+    }
+
+    .principal img {
+        width: 100%;
+        max-width: 300px; /* Limita o tamanho da imagem em telas menores */
+        padding-top: 20px;
+    }
+
+    .principal p {
+        font-size: 24px; /* Fonte menor para caber melhor */
+        padding-top: 40px;
+    }
+
+    input {
+        width: 100%; /* O input ocupa toda a largura disponível */
+        max-width: 250px; /* Limita o tamanho do input em telas menores */
+        font-size: 18px; /* Fonte menor */
+        padding: 10px; /* Menor padding para caber na tela */
+    }
+
+    button {
+        max-width: 250px; /* Limita o tamanho do botão */
+        font-size: 18px; /* Fonte menor */
+    }
+}
